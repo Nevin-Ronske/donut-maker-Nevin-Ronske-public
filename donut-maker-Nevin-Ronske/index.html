@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Donut Clicker</title>
+  </head>
+  <body>
+    <!-- Updated header with dropdown links -->
+    <header class="header">
+      <nav>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">Links</a>
+            <ul class="dropdown">
+              <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="noopener noreferrer">Inspiration</a></li>
+              <li><a href="./aboutme.html">About Me</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- H1 wrapped in its own red flexbox -->
+    <div class="h1-container">
+      <h1>Donut Clicker</h1>
+    </div>
+
+    <div id="donutcounter">Donut Counter: 0</div>
+    <button id="clicker" onclick="addDonuts()">🍩Clicker</button>
+    <button id="auto-clicker" onclick="addAutoClicker()">Auto Clicker</button>
+    <div id="auto-clicker-costs">Auto Clicker Cost's: 100</div>
+    <div id="price">Auto Clicker: 0</div>
+    <div class="container"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+

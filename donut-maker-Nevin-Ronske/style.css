@@ -1,0 +1,239 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    /* Make header stick to the top */
+    top: 0;
+    /* Position it at the top */
+    left: 0;
+    /* Ensure it spans the full width */
+    z-index: 1000;
+    /* Make sure it's above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for better visibility */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item>a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ff6347;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    /* Position just below the parent menu item */
+    left: 0;
+}
+
+.dropdown li {
+    list-style-type: none;
+}
+
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown a:hover {
+    background-color: #ff4500;
+}
+
+/* Flexbox styling for H1 */
+.h1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6347;
+    /* Red background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.h1-container h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Button styles remain the same */
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    /* Adjusted for emoji */
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Auto clicker and counter styles remain the same */
+
+#auto-clicker-costs,
+#price {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #ff6347;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Container for layout adjustments, if needed */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    /* Make header stick to the top */
+    top: 0;
+    /* Position it at the top */
+    left: 0;
+    /* Ensure it spans the full width */
+    z-index: 1000;
+    /* Make sure it's above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for better visibility */
+    text-align: center;
+}
+
+/* Links styling */
+.about-me-git,
+.about-me-linkedin {
+    color: #ff6347;
+    /* Red color for links */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px;
+    border: 2px solid #ff6347;
+    /* Border same color as text */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effect */
+    margin: 15px;
+    /* Space around the links */
+    display: inline-block;
+    /* Allows for margin to work correctly and aligns horizontally */
+}
+
+.about-me-git:hover,
+.about-me-linkedin:hover {
+    background-color: #ff6347;
+    /* Change background on hover */
+    color: white;
+    /* Change text color on hover */
+}
+
+/* Paragraph styling */
+.text {
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: white;
+    /* Text color */
+    background-color: #ff6347;
+    /* Background color of the paragraph */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 15px 0;
+    /* Space above and below the paragraph */
+    transition: background-color 0.3s ease;
+    text-align: center;
+    /* Center the text */
+    width: 100%;
+    /* Full width of the container */
+    max-width: 600px;
+    /* Max width to avoid too wide of a paragraph */
+}
+
+/* Additional styles to ensure everything is aligned below the header */
+.content {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically if needed */
+    margin-top: 80px;
+    /* Space below the header, adjust if necessary */
+}
